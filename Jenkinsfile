@@ -22,7 +22,6 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh'
                 
                 // input message: 'Sudah selesai menggunakan React App? (Klik "Proceed" untuk mengakhiri)'
-                echo 'Aplikasi berjalan. Menunggu 1 menit sebelum berakhir'
                 sleep 60
 
                 sh './jenkins/scripts/kill.sh'
